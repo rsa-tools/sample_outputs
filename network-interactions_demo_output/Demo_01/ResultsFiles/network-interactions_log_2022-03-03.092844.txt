@@ -1,0 +1,85 @@
+; network-interactions  -v 20 -title demo_01 -tfs $RSAT/public_html/demo_files/TFs_short.txt -cre $RSAT/public_html/demo_files/enhancers_short.bed -genome galGal4 -report_net -net $RSAT/public_html/demo_files/net_short.tsv -score 5 -pval 0.0005 -outdir ./Demo_01 -html
+; Input files
+;	TFs          	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/TFs_short.txt
+;	network      	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/net_short.tsv
+;	cres         	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/enhancers_short.bed
+; Results files
+;	network_intersection_onlyTFs	./Demo_01/ResultsFiles/network_intersection_onlyTFs_2022-03-03.092844.tsv
+;	GRN_indirect_interactions	./Demo_01/ResultsFiles/GRN_indirect_interactions_2022-03-03.092844.tsv
+;	archive      	./Demo_01/network-interactions_archive_2022-03-03.092844.zip
+;	network_not_found_interactions	./Demo_01/ResultsFiles/network_not_found_interactions_2022-03-03.092844.tsv
+;	err_log      	./Demo_01/ResultsFiles/_errors.txt
+;	log          	./Demo_01/ResultsFiles/network-interactions_log_2022-03-03.092844.txt
+;	network_intersection	./Demo_01/ResultsFiles/network_intersection_2022-03-03.092844.tsv
+;	network_found_interactions	./Demo_01/ResultsFiles/network_found_interactions_2022-03-03.092844.tsv
+;	summary      	./Demo_01/ResultsFiles/SUMMARY_2022-03-03.092844.html
+;	GRN_direct_interactions	./Demo_01/ResultsFiles/GRN_direct_interactions_2022-03-03.092844.tsv
+;	complete_direct_interactions	./Demo_01/ResultsFiles/complete_direct_interactions_2022-03-03.092844.tsv
+; Intermediate files
+;	used_regulatory_regions	./Demo_01/IntermediateFiles/network-interactions_used_regulatory_regions_2022-03-03.092844.bed
+;	used_cre_seqs_geneheader	./Demo_01/IntermediateFiles/network-interactions_used_cre_seqs_geneheader_2022-03-03.092844.fa
+;	used_matrixes	./Demo_01/IntermediateFiles/network-interactions_used_matrixes_2022-03-03.092844.tf
+;	used_matrix_scan_results	./Demo_01/IntermediateFiles/network-interactions_used_matrix-scan_results_2022-03-03.092844.tsv
+;	used_cre_seqs	./Demo_01/IntermediateFiles/network-interactions_used_cre_seqs_2022-03-03.092844.fa
+
+Number of motif databases = 1
+
+# Reading BED file: /home/rsat/packages/rsat-2021/rsat/public_html/demo_files/enhancers_short.bed
+
+# Reading TFs list file: /home/rsat/packages/rsat-2021/rsat/public_html/demo_files/TFs_short.txt
+
+Seems like you didn't reported the regulatory sequences for the following TFs : FOXP4
+
+The program will take into account the following TFs for further network comparision : LMX1B,IRX1,EYA1,TFEB,YY1,SOX11
+
+Reading input network file: /home/rsat/packages/rsat-2021/rsat/public_html/demo_files/net_short.tsv
+
+Seems like you didn't reported the regulatory sequences for the following genes in your input network: DLX5,JUN,SIX1
+
+The program will use the rest of the genes for further network comparison: EYA1,IRX1
+
+Initiating RSAT tools processing ...
+
+Retrieving matrixes ...
+
+	Got matrixes!
+
+Retrieving regulatory sequences ...
+
+	Done!
+
+matrix-scan running ...
+
+	Done!
+
+RSAT tools processing ready.
+
+Network computation running ...
+
+Also creating output files ...
+
+Network	Interactions-count
+found	44
+intersection	0
+not_found	0
+complete	44
+only_TFs	11
+
+	Done.
+
+Closing output files ... 
+
+	Done. 
+
+Creating HTML summary ... 
+
+Converting tab-delimited tables to HTML
+End of program.
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71

@@ -1,0 +1,159 @@
+; network-interactions  -v 20 -title demo_01 -tfs $RSAT/public_html/demo_files/TFs_short.txt -cre $RSAT/public_html/demo_files/enhancers_short.bed -genome galGal4 -report_net -net $RSAT/public_html/demo_files/net_short.tsv -score 5 -pval 0.0005 -outdir ./Demo_01 -html
+; Input files
+;	TFs          	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/TFs_short.txt
+;	network      	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/net_short.tsv
+;	cres         	/home/rsat/packages/rsat-2021/rsat/public_html/demo_files/enhancers_short.bed
+; Results files
+;	network_intersection_onlyTFs	./Demo_01/ResultsFiles/network_intersection_onlyTFs_2022-03-03.092844.tsv
+;	GRN_indirect_interactions	./Demo_01/ResultsFiles/GRN_indirect_interactions_2022-03-03.092844.tsv
+;	archive      	./Demo_01/network-interactions_archive_2022-03-03.092844.zip
+;	network_not_found_interactions	./Demo_01/ResultsFiles/network_not_found_interactions_2022-03-03.092844.tsv
+;	err_log      	./Demo_01/ResultsFiles/_errors.txt
+;	log          	./Demo_01/ResultsFiles/network-interactions_log_2022-03-03.092844.txt
+;	network_intersection	./Demo_01/ResultsFiles/network_intersection_2022-03-03.092844.tsv
+;	network_found_interactions	./Demo_01/ResultsFiles/network_found_interactions_2022-03-03.092844.tsv
+;	summary      	./Demo_01/ResultsFiles/SUMMARY_2022-03-03.092844.html
+;	GRN_direct_interactions	./Demo_01/ResultsFiles/GRN_direct_interactions_2022-03-03.092844.tsv
+;	complete_direct_interactions	./Demo_01/ResultsFiles/complete_direct_interactions_2022-03-03.092844.tsv
+; Intermediate files
+;	used_regulatory_regions	./Demo_01/IntermediateFiles/network-interactions_used_regulatory_regions_2022-03-03.092844.bed
+;	used_cre_seqs_geneheader	./Demo_01/IntermediateFiles/network-interactions_used_cre_seqs_geneheader_2022-03-03.092844.fa
+;	used_matrixes	./Demo_01/IntermediateFiles/network-interactions_used_matrixes_2022-03-03.092844.tf
+;	used_matrix_scan_results	./Demo_01/IntermediateFiles/network-interactions_used_matrix-scan_results_2022-03-03.092844.tsv
+;	used_cre_seqs	./Demo_01/IntermediateFiles/network-interactions_used_cre_seqs_2022-03-03.092844.fa
+# Newly found interactions in:	./Demo_01/ResultsFiles/complete_direct_interactions_2022-03-03.092844.tsv not found in /home/rsat/packages/rsat-2021/rsat/public_html/demo_files/net_short.tsv
+#TFx	Geney	Coordinates	Positions	Scores
+YY1	XLOC_015475	chr9:7126744-7128049	R_1228_1239;D_328_339	4.4;5.7
+YY1	SULT6B1	chr3:32659586-32660551	R_538_549;R_614_625	4.4;6.4
+YY1	gga	chr5:2570682-2572149	D_241_252;D_391_402	4.5;8.0
+YY1	gga	chr2:142250230-142251903	D_58_69	3.9
+YY1	ENSGALG00000015479	chr2:112964339-112965278	R_556_567;D_108_119	5.2;6.5
+YY1	XLOC_011029	chr3:91354278-91356176	D_123_134;R_1542_1553;R_168_179	4.4;4.1;6.2
+YY1	SCARNA24	chr1:117420844-117422368	R_1446_1457;R_1507_1518	6.2;6.3
+YY1	VAV3	chr8:1035758-1037827	R_1111_1122;R_38_49;R_690_701;R_778_789;R_325_336	4.7;5.9;7.9;4.1;3.9
+YY1	KPNA4	chr9:21588443-21589179	D_420_431	11.9
+YY1	SOX6	chr5:10646723-10648243	R_201_212	4.8
+YY1	SNRPB2	chr3:5603949-5605124	D_207_218;D_993_1004;D_290_301;D_665_676;D_185_196	4.1;4.1;4.1;4.1;3.9
+YY1	ENSGALG00000009178	chr3:11581493-11583017	D_33_44;D_1465_1476;D_1382_1393;D_612_623;D_939_950;D_897_908;D_695_706;D_1068_1079;D_812_823;D_1504_1515;D_1152_1163;D_1110_1121	4.1;4.1;4.1;4.1;9.5;3.9;4.1;4.1;4.1;3.9;3.9;4.1
+YY1	EYA1	chr2:116791463-116792812	R_370_381	5.1
+YY1	EYA1	chr2:116685751-116686124	D_199_210	4.2
+YY1	TFEB	chr26:4959032-4960031	R_292_303	7.8
+YY1	LMX1B	chr17:10117169-10118087	R_271_282	5.2
+YY1	SOX11	chr3:93974046-93974675	D_47_58	4.5
+TFEB	YY1	chr5:48408565-48409521	D_210_219;R_8_17;R_210_219	6.2;5.7;9.8
+TFEB	GFRA1	chr6:28160839-28161624	R_489_498	5.9
+TFEB	XLOC_015475	chr9:7126744-7128049	R_1007_1016;D_1007_1016;R_500_509;D_343_352	6.3;5.6;6.0;5.7
+TFEB	SULT6B1	chr3:32659586-32660551	D_424_433	6.5
+TFEB	gga	chr5:2570682-2572149	R_1127_1136;D_111_120;D_1384_1393	5.2;6.0;5.7
+TFEB	ENSGALG00000024315	chr6:5489857-5491155	D_84_93;R_504_513;R_84_93;R_618_627	8.7;6.0;10.6;6.4
+TFEB	ENSGALG00000015479	chr2:112964339-112965278	R_736_745	5.8
+TFEB	XLOC_011029	chr3:91354278-91356176	D_78_87;R_78_87	8.5;8.1
+TFEB	SCARNA24	chr1:117420844-117422368	R_748_757;D_50_59;R_50_59;D_748_757;D_408_417	6.1;5.7;6.6;5.8;5.6
+TFEB	VAV3	chr8:1035758-1037827	R_866_875;R_1170_1179;D_1170_1179	7.1;5.2;5.6
+TFEB	SOX6	chr5:10646723-10648243	D_16_25;R_16_25	9.8;9.0
+TFEB	IRX1	chr2:87130510-87131509	D_163_172	5.7
+TFEB	TFEB	chr26:4959032-4960031	R_821_830;D_821_830	5.8;6.7
+LMX1B	YY1	chr5:48408565-48409521	R_302_312;D_299_309	1.9;2.0
+LMX1B	XLOC_015475	chr9:7126744-7128049	D_450_460;D_198_208;R_674_684;R_453_463;D_671_681	1.5;0.8;5.5;1.7;6.0
+LMX1B	gga	chr5:2570682-2572149	R_529_539;D_1012_1022;R_1215_1225;D_1212_1222	0.8;1.5;2.3;0.9
+LMX1B	ENSGALG00000024315	chr6:5489857-5491155	R_255_265;D_252_262	0.9;1.4
+LMX1B	ENSGALG00000015479	chr2:112964339-112965278	D_197_207	0.9
+LMX1B	XLOC_011029	chr3:91354278-91356176	D_523_533;D_619_629;R_946_956;R_1352_1362;R_463_473;R_526_536;R_470_480	2.3;0.5;1.9;0.2;1.9;1.7;0.2
+LMX1B	DLG5	chr6:12784442-12785279	D_310_320;R_92_102	0.7;0.8
+LMX1B	SCARNA24	chr1:117420844-117422368	D_1317_1327;D_307_317;R_1320_1330;D_387_397;R_310_320;D_1210_1220;D_1163_1173	6.0;11.2;7.2;1.3;10.6;0.4;1.0
+LMX1B	VAV3	chr8:1035758-1037827	R_1264_1274;R_761_771;D_408_418;R_2030_2040;D_1758_1768;D_2031_2041;D_1130_1140;R_1184_1194	0.5;0.8;0.6;0.1;0.2;2.0;1.5;0.6
+LMX1B	KPNA4	chr9:21588443-21589179	R_308_318;D_305_315	1.4;0.8
+LMX1B	SOX6	chr5:10646723-10648243	R_683_693;D_283_293	0.2;7.0
+LMX1B	SNRPB2	chr3:5603949-5605124	R_99_109;D_96_106	1.6;1.2
+LMX1B	ENSGALG00000009178	chr3:11581493-11583017	R_7_17	0.8
+LMX1B	IRX1	chr2:87130510-87131509	D_149_159;D_8_18	1.2;2.0
+LMX1B	EYA1	chr2:116791463-116792812	D_419_429;R_422_432;D_416_426	1.2;9.0;1.4
+LMX1B	TFEB	chr26:4959032-4960031	R_315_325;D_844_854;R_641_651;R_172_182;D_312_322;R_847_857	6.7;8.6;0.7;1.6;7.5;7.3
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
+; Host name	rsat-tagc
+; Job started	2022-03-03.092844
+; Job done	2022-03-03.092858
+; Seconds	0.15
+;	user	0.15
+;	system	0.03
+;	cuser	10.82
+;	csystem	0.71
